@@ -5,7 +5,7 @@ class Calculadora:
         pass
 
     def mostrar_menu(self):
-        print("")
+        print("Calculadora com os últimos 2 dígitos do meu RU: 3626362")
         print("Escolha a operação:")
         print("1. Soma (+)")
         print("2. Subtração (-)")
@@ -31,26 +31,34 @@ class Calculadora:
             if escolha == 1:
                 resultado = self.somar(num1, num2)
                 print("Resultado da soma:", resultado)
+                print("---------------------------------------")
             elif escolha == 2:
                 resultado = self.subtrair(num1, num2)
                 print("Resultado da subtração:", resultado)
+                print("---------------------------------------")
             elif escolha == 3:
                 resultado = self.multiplicar(num1, num2)
                 print("Resultado da multiplicação:", resultado)
+                print("---------------------------------------")
             elif escolha == 4:
                 resultado = self.dividir(num1, num2)
                 print("Resultado da divisão:", resultado)
+                print("---------------------------------------")
             elif escolha == 5:
                 resultado = self.expoente(num1, num2)
                 print("Resultado do expoente:", resultado)
+                print("---------------------------------------")
             elif escolha == 6:
                 resultado = self.resto(num1, num2)
                 print("Resultado do resto:", resultado)
+                print("---------------------------------------")
             elif escolha == 7:
                 resultado = self.raiz_quadrada_soma(num1, num2)
                 print("Resultado da raiz quadrada da soma:", resultado)
+                print("---------------------------------------")
             else:
                 print("Opção inválida. Tente novamente.")
+                print("---------------------------------------")
 
     def somar(self, a, b):
         return a + b
